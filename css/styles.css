@@ -1,0 +1,151 @@
+/* Global Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0e4d64, #1f7a8c);
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Hero Section with Animated Gradient */
+.hero {
+  height: 100vh;
+  background-image: url("/assets/img/hostelLobby.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradient 15s ease infinite;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Swiper Wrapper and Slide */
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Allow slide to adjust to content */
+}
+
+/* Room Card */
+.room-card {
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  margin: 0 auto; /* Ensure the card is centered */
+}
+
+/* Parallax Sections */
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.amenities,
+.booking {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background: #ff5f6d;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffc371;
+}
+
+/* Swiper */
+.swiper-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
